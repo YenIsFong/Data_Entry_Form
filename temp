@@ -1,0 +1,30 @@
+                case "Delete Action":
+                    # Label for selecting action to delete
+                    delete_label = tk.Label(frame1, text="Select Action to Delete:")
+                    delete_label.grid(row=5, column=0, sticky='W')
+                    tk_list.append(delete_label)
+
+                    # Get the list of actions for the selected error
+                    newactionlist = getActionList(ComboBoxValue)
+
+                    # Create a combobox with available actions
+                    delete_action_combobox = ttk.Combobox(frame1, values=newactionlist, state="readonly", width=40)
+                    delete_action_combobox.grid(row=5, column=1, sticky='W')
+                    tk_list.append(delete_action_combobox)
+
+                    # Delete Button
+                    def confirm_delete():
+                        selected_action = delete_action_combobox.get()
+                        if not selected_action:
+                            messagebox.showerror("Error", "Please select an action to delete.")
+                            return
+
+                        confirmation = messagebox.askyesno("Confirm Deletion", f"Are you sure you want to delete '{selected_action}'?")
+                        if confirmation:
+                            deleteAction(ComboBoxValue, selected_action)
+                            messagebox.showinfo("Success", f"Action '{selected_action}' deleted successfully.")
+                            delete_action_combobox['values'] = getActionList(ComboBoxValue)  # Refresh the combobox
+
+                    delete_button = tk.Button(frame1, text="Delete Action", command=confirm_delete, width=15)
+                    delete_button.grid(row=6, column=1, sticky='W', pady=10)
+                    tk_list.append(delete_button)
