@@ -1,3 +1,4 @@
+
 import csv
 import pandas as pd
 file_path = r"C:\Users\768604\Desktop\maint_app\merged_output\COLLATED EVERYTHING.csv"             
@@ -194,6 +195,7 @@ def DecrementActionCount(ErrorString, ActionString):
     df.to_csv(file_path, index=False)
 
 def deleteError(ErrorString):
+    df = pd.read_csv(file_path)
     start_row = getCurrentRow(ErrorString)
     if start_row is None:
         print("Issue not found")
@@ -202,8 +204,6 @@ def deleteError(ErrorString):
     print(f"Start row: {start_row}")
     lastrow = len(df)  # Default to the last row if no 'nan' is found
     
-    df = pd.read_csv(file_path)
-
     # Identify the last row using pandas
     for index, row in enumerate(df.values[start_row:], start=start_row):
         print(f"Index: {index}, Value of row[1]: {row[1]}")
@@ -283,3 +283,118 @@ def deleteAction(ErrorString, ActionToDel):
         writer.writerows(rows)
 
     print("Error deleted successfully.")
+
+def getlastColumn(ErrorString):
+    
+    df = pd.read_csv(file_path)
+    start_row = getCurrentRow(ErrorString)
+    
+    for i in range(3, len(df.columns)):
+        if pd.isna(df.iloc[start_row, i]):
+            # If the cell is NA, return current column
+            return i
+    return len(df.columns)
+
+def addOrder(ErrorString, OrderList, AdminName):
+    """Updates the first available order column starting from column index 3."""
+    
+    df = pd.read_csv(file_path)
+    start_row = getCurrentRow(ErrorString)
+
+    if start_row is None:
+        print("Issue not found")
+        return
+
+    print(f"Updating row: {start_row}")
+    
+    columntoupdate=getlastColumn(ErrorString)
+    print(f"Updating column: {columntoupdate}")
+    
+    # Ensure the DataFrame has enough rows
+    while len(df) <= start_row + len(OrderList):
+        df.loc[len(df)] = [None] * len(df.columns)
+    
+    # Ensure the DataFrame has enough columns
+    while len(df.columns) <= columntoupdate:
+        df[columntoupdate] = None
+        
+        
+    column_names = list(df.columns)
+    column_names[columntoupdate] = 'Order'
+    df.columns = column_names
+    for index, item in enumerate(OrderList):
+        df.iloc[index + start_row, columntoupdate] = item
+    df.iloc[start_row-1,columntoupdate]=AdminName
+
+    # Save the updated DataFrame
+    df.to_csv(file_path, index=False)
+    print("Order list updated successfully.")
+    
+def findUserColumn(ErrorString,User):
+    
+    df = pd.read_csv(file_path)
+    start_row = getCurrentRow(ErrorString)
+    
+    for i in range(3, len(df.columns)):
+        if df.iloc[start_row-1, i] == User:
+            return i
+    return None
+
+# getActionOrderdict(ErrorString): return Dictionary {Action:order}
+def getActionOrderdict(ErrorString,User):
+    """
+    Returns a dictionary of actions and their corresponding orders for a given error and user.
+    
+    Args:
+        error_string (str): The error string to retrieve actions for.
+        user (str): The user to retrieve actions for.
+    
+    Returns:
+        dict: A dictionary where keys are actions and values are their corresponding orders.
+    """
+    df = pd.read_csv(file_path)
+    start_row = getCurrentRow(ErrorString)
+
+    if start_row is None:
+        print("Issue not found")
+        return
+    
+    lastrow = len(df)  # Default to the last row if no 'nan' is found
+
+    for index, row in enumerate(df.values[start_row:], start=start_row):
+        print(index)
+        print(str(row[1]))
+        if str(row[1]) == "nan":
+            # Add your action here
+            lastrow = index
+            print(f"Found nan at row: {lastrow}")
+            break
+    else:
+        print("No nan value found!")
+
+    # columntoextract starts from 3, if 
+    OrderColumn = findUserColumn(ErrorString,User)
+    
+    Order = df.iloc[start_row:lastrow, OrderColumn].tolist()
+    print(Order)
+    
+    Action=getActionList(ErrorString)
+    print(Action)
+    
+    # Combine the two lists into a dictionary
+    ActionOrderDict = dict(zip(Action, Order))
+    
+    # Sort the dictionary in descending order
+    sorted_ActionOrderDict = dict(sorted(ActionOrderDict.items(), key=lambda item: int(item[1])))
+    print(sorted_ActionOrderDict)
+    
+    return sorted_ActionOrderDict
+    # extract startrow to lastrow, the User ==  df.iloc[start_row-1,OrderRow]
+
+def getUser(ErrorString):
+    df = pd.read_csv(file_path)
+    start_row = getCurrentRow(ErrorString)
+    
+    UserList = df.iloc[start_row-1, 3:getlastColumn(ErrorString)].tolist()
+    print(UserList)
+    return UserList
