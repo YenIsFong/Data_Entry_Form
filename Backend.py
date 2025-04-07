@@ -1,7 +1,7 @@
 
 import csv
 import pandas as pd
-file_path = r"C:\Users\768604\Desktop\maint_app\merged_output\COLLATED EVERYTHING.csv"             
+file_path = r"C:\Users\768604\Desktop\Error_Issue_Entry_App\COLLATED EVERYTHING.csv"             
 df = pd.read_csv(file_path)
 
 def getErrorDict():

@@ -550,7 +550,7 @@ def Action_Order_Query_Tab(frame3):
             row_num = 5
             for action, order in sortedActionOrder.items():
                 order_label = tk.Label(scrollable_frame, text=f"{order}.")
-                order_label.grid(row=row_num, column=0, padx=10, pady=2, sticky='W')
+                order_label.grid(row=row_num, column=0, padx=10, pady=2, sticky='E')
                 database.append(order_label)
 
                 action_label = tk.Label(scrollable_frame, text=action)

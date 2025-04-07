@@ -1,418 +1,411 @@
-Issue,Action Taken,Frequency
-,,
-Load Head Issue,Reset PIC18,14.0
-,Reset VXI,11.0
-,Adjust End Effector reading,9.0
-,Try a few times load/unload head (ok),8.0
-,Reset Dover,4.0
-,Reslot All Module,2.0
-,Change Head,2.0
-,Adjust end effector vacuum setting,2.0
-,Realign preamp,1.0
-,Realign tester,1.0
-,Change door sensor,1.0
-,Reroute Door sensor,1.0
-,Reoptimize MD chc file,1.0
-,Restart SETS,1.0
-,Restart WinEE,1.0
-,,
-Isolator error,Reinitialize tester,6.0
-,Reset VXI,4.0
-,Adjust Isolator Air,4.0
-,Check/Adjust Isolator Sensor,3.0
-,Change Isolator Tubing,3.0
-,Change Isolator,2.0
-,Reslot All Module,2.0
-,Reset Piezo,1.0
-,Reset Dover,1.0
-,Redo Touch off,1.0
-,Restart Tester,1.0
-,Swap Mictor Cable,1.0
-,Check/Adjust End Effector reading,1.0
-,Run Lfach Amp Back,1.0
-,Optimize CHC file,1.0
-,,
-Disc drop issue,Adjust/Redo DFCD Insert Leveling,17.0
-,Release tester to [Name],12.0
-,Verify/Check DFCD Leveling,5.0
-,"Adjust DFCD Air (Cover Up/Lift, CW/CCW Rotate)",5.0
-,Run Repeat/Debugger Mode (TPI check),4.0
-,Check Engineering Mode (ID/OD),2.0
-,Assist on collecting Vibration data,1.0
-,Change new mouse,1.0
-,Wipe down tester,1.0
-,,
-Resistance issue,Reset VXI,6.0
-,Realign/Adjust Preamp Alignment,6.0
-,Initialise,5.0
-,Check/Verify Resistance,5.0
-,Change Head,4.0
-,Release tester to Siti,3.0
-,Change Preamp,3.0
-,Reslot Module,3.0
-,Replace/Change AC Box/Fuse,2.0
-,Adjust End Effector,2.0
-,Redo Touch Off,2.0
-,,
-Disk scratch,Redo Insert Leveling,4.0
-,Initialise,3.0
-,Release tester to Akila,2.0
-,Release tester to Eric,1.0
-,Release tester to Anthony,1.0
-,Wipe down Tester,1.0
-,Adjust Insert Leveling,2.0
-,Change Insert,2.0
-,Check/Engineering Mode,3.0
-,Manual Turn Spindle Adapter,1.0
-,Change Head & Disk,1.0
-,Optimise,1.0
-,Run Repeat,2.0
-,Swap PC/Hard Disk,1.0
-,,
-dfcd error,Reset PIC 18,9.0
-,Initialise,13.0
-,Reset VXI,5.0
-,Reset Dover,7.0
-,Release tester to Siti,4.0
-,Release tester to Anthony,4.0
-,Release tester to SC,3.0
-,Load/Unload DFCD,11.0
-,Check Engineering Mode,6.0
-,Redo DFCD Insert Leveling,5.0
-,Adjust DFCD,7.0
-,Change DFCD Insert,4.0
-,Try Run/Repeat,5.0
-,,
-Low TPI,Redo Insert Leveling,31.0
-,Reset Vxi,17.0
-,Change Head & Disk,14.0
-,Reset Dover,5.0
-,Reset PIC 18,5.0
-,Adjust Preamp Alignment,6.0
-,Release tester to Eric,8.0
-,Release tester to Siti,9.0
-,Check Engineering Mode,4.0
-,Run Repeatability,8.0
-,Change Insert,7.0
-,Optimise Head,5.0
-,Reslot All Module,8.0
-,,
-CSM Issue,Reset Vxi,23.0
-,Change Head & Disk,17.0
-,Reslot All Module,11.0
-,Reset Sunburst Power Supply,4.0
-,Reset Piezo Controller,4.0
-,Reset Dover,3.0
-,Reset PC,4.0
-,Change CSM Module,8.0
-,Reflash CSM Module,5.0
-,Adjust Insert Leveling,7.0
-,Adjust Preamp Alignment,4.0
-,,
-Ber unstable,Reset Vxi,27.0
-,Change Head & Disk,24.0
-,Reslot All Module,16.0
-,Change CHC file,17.0
-,Optimise head,15.0
-,Run Repeat/Delta,13.0
-,Change Ber 6 module,8.0
-,Reset Dover,5.0
-,Reset PC,4.0
-,Change CSM Module,6.0
-,Reflash CSM Module,2.0
-,Adjust Insert Leveling,6.0
-,Adjust Preamp Alignment,3.0
-,Release tester to Eric,9.0
-,Release tester to Siti,6.0
-,Release tester to Akila,6.0
-,,
-Touch off alignment out,Change backup wingpar,1.0
-,Verify slot 1 to 8 head resistance and preamp alignment,3.0
-,Did engineering mode check for ID / OD,3.0
-,Mailed out data,2.0
-,Release tester to Siti,1.0
-,,
-Copley Move Abort,Check air (leakage),1.0
-,Change main air joint Connector,1.0
-,Cut Main air tubing,1.0
-,Initialise,2.0
-,Change analog power supply,1.0
-,Change copley fuse,1.0
-,Reinitialize tester,1.0
-,Release tester to Akila,1.0
-,,
-servo error,Change CSM module,1.0
-,Reflash CSM,1.0
-,Reset Vxi,1.0
-,Reset Piezo controller,1.0
-,Initialise,1.0
-,Check engineering mode,1.0
-,Change new head & disk,4.0
-,Change Stdev & Pes range spec,1.0
-,Restart VXI,1.0
-,Change backup winspin,1.0
-,Change XD rw offset,1.0
-,,
-Failed to initialize tester,Reset Vxi,3.0
-,Reset Sunburst power supply,1.0
-,Reslot All Module,3.0
-,Reset PC,1.0
-,Reinstall nivxi software,1.0
-,Reinitialize tester,2.0
-,Reinstall vxi resman,1.0
-,Run XD repeat,1.0
-,,
-Power trip,Power on & Initialize tester,3.0
-,Reconnect E stop connector,1.0
-,Reinitialize SET,1.0
-,Reprogram Dover,1.0
-,,
-Heater res unstable,Reset Vxi,3.0
-,Reslot All module,2.0
-,Adjust Preamp alignment,2.0
-,Check Engineering Mode,2.0
-,Reconnect Lfach cable,1.0
-,Change csm track spacing,1.0
-,Adjust tilt Up/Down Air,1.0
-,Run delta,1.0
-,Reset piezo Controller & analog,1.0
-,Change Lfach,1.0
-,Change Dspm,1.0
-,Reslot dsmp & ber module,1.0
-,Redo dfcd insert leveling,1.0
-,Change heater spec,1.0
-,,
-Degrade Issue,Check z height,1.0
-,Change z height ring,2.0
-,Change power supply cable,1.0
-,Change SMA cable for Lfatch cable,1.0
-,Engr mode check,1.0
-,Run ID repeat,1.0
-,,
-Data unstable,Remove load limiter,1.0
-,Put back original power cable,1.0
-,Put back original adapter ring,1.0
-,Increase dfcd cover up air,1.0
-,Change chc file,1.0
-,Run repeatability test,2.0
-,Realign preamp,2.0
-,Retighten all cables,1.0
-,Copy setup from RFS128,1.0
-,Redo repeatability,1.0
-,Engineering mode check,1.0
-,Original Dover fixed,1.0
-,,
-End effector error,Adjust End effector reading,2.0
-,Change head & disk,1.0
-,Change CHC file,1.0
-,Optimise,1.0
-,Reset Vxi,3.0
-,Reset Pic 18,3.0
-,Initialise,3.0
-,Check any leakage,1.0
-,Change Pic18,1.0
-,Adjust end effector vacuum,2.0
-,Load/unload head,3.0
-,Release tester to Siti,2.0
-,Release tester to Jyothi,1.0
-,"Homing, pnest and tnest touch off",1.0
-,Adjusted end effector air,1.0
-,Verified head resistance and preamp alignment,1.0
-,,
-Track scan issue,Reset Vxi,1.0
-,Reset Piezo controller,1.0
-,Reslot All module,2.0
-,Initialise,5.0
-,Check Engineering mode,6.0
-,Adjust isolator sensor plate,1.0
-,Change power cable,1.0
-,Check trackscan error,1.0
-,Load head to disk,1.0
-,Check isolator jerking,1.0
-,Try Par 6 Module,1.0
-,Try Piezo Controller,1.0
-,Change head,4.0
-,Swap Mictor Cable,1.0
-,Change new head & disc,2.0
-,Change warm disc and head,1.0
-,Reslot module,1.0
-,Verified dfcd leveling,1.0
-,Change rw offset,1.0
-,Change CSM module,1.0
-,,
-Disc crash,Change disc adapter,1.0
-,Run out,1.0
-,PG06 insert leveling,1.0
-,Increase dfcd cover up air,1.0
-,Set p2 cover vacuum,1.0
-,Engineering mode check for ID/OD,2.0
-,Vacuum and wipe down tester,1.0
-,Replace new leveling block,1.0
-,Redo leveling using leveling tools,1.0
-,Set dfcd cover vacuum p2 value,1.0
-,Took RFS121 old pc prepared by Erwin,1.0
-,Install vxi card,1.0
-,Unable to initialize Winee,1.0
-,,
-ADC Unstable,Reset Vxi,2.0
-,Reset EE,1.0
-,Change CHC file,6.0
-,Reoptimize CHC file,4.0
-,Run repeat,4.0
-,Adjust Insert leveling,1.0
-,Initialise,1.0
-,Run delta,1.0
-,Run sample,1.0
-,Try FMM 3.1 & Chc board,1.0
-,Change head,4.0
-,Verify final ADC,2.0
-,Reslot All module,1.0
-,Optimise head,1.0
-,,
-Amp low,Reset Vxi,13.0
-,Change head,12.0
-,Initialize,11.0
-,Reslot All Module,8.0
-,Run repeat,7.0
-,Change disk,5.0
-,Reset EE,4.0
-,Optimise head,4.0
-,Reset Piezo controller,3.0
-,Change Hutch board,3.0
-,Change Preamp,3.0
-,Check Engineering mode,3.0
-,Reset Analog,2.0
-,Change Coaxial Cable,2.0
-,Change Dspm2,2.0
-,Change Sunburst,2.0
-,Check Debugger mode,2.0
-,Run Lfach script,2.0
-,Redo Insert leveling,2.0
-,Redo homing & touch off,2.0
-,Reset Dover,1.0
-,Change CHC file,1.0
-,Change CHC board Adaptor,1.0
-,Change Power supply fuse,1.0
-,,
-chiller error,Reset Chiller,4.0
-,Reinitialize tester,4.0
-,Reslot All Module,1.0
-,Reset Analog,1.0
-,Reset VXI,1.0
-,Top up Coolant,1.0
-,Reduce coolant,1.0
-,Change Chiller,1.0
-,PC issue solve by IT,1.0
-,"Done for all VTS, Launch and RFS testers",1.0
-,,
-Secondary 59 error,Initialise,8.0
-,Check engineering mode,8.0
-,Reset Vxi,4.0
-,Run VTS repeat Script,4.0
-,Reset Piezo Controller,3.0
-,Reflash CSM,2.0
-,Change CHC file,1.0
-,Change OD head,1.0
-,Warmup & ref disk,1.0
-,Reslot CSM module,1.0
-,Reslot All Module,1.0
-,Check Isolator movement,1.0
-,Change Peizo controller cable,1.0
-,Verify new element,1.0
-,Change x28 element,1.0
-,Redo alignment,1.0
-,Run XD repeatability,1.0
-,Verify dfcd leveling gap,1.0
-,Increase stage air,1.0
-,Release tester to LS,1.0
-,Release tester to Siti,1.0
-,Request Sudha to run repeat,1.0
-,Pending Engineer to check setup,1.0
-,,
-Lfach bad,Reslot all Module,4.0
-,Initialize Tester,4.0
-,Change head & disk,5.0
-,Change setup ring,1.0
-,Realign preamp,2.0
-,Reduce speed receiver,1.0
-,Run ID repeatability,1.0
-,Try different Lfach board,1.0
-,Try different DSPM2,1.0
-,Change preamp,1.0
-,Redo dfcd insert leveling,2.0
-,"Reset VXi, Piezo Controller & hutch board power",1.0
-,Reslot dsmp & ber module,1.0
-,Uninstall & install VXI resman driver,1.0
-,Check preamp & fos support alignment,8.0
-,Try different new head tray,1.0
-,Replace setup,12.0
-,Remove unuse scripts & winEE,1.0
-,Reflash PZ element,1.0
-,Change dspm2 & reprogram,15.0
-,,
-Shroud door issue,Reset PIC18,4.0
-,Initialize tester,2.0
-,Reinitialize tester,1.0
-,Redo touch off,1.0
-,Change PIC18,1.0
-,Realign shroud door,2.0
-,Realign preamp,1.0
-,Test nest touchoff,1.0
-,,
-Disk slanted,Verify insert leveling,2.0
-,Reduce dfcd cover cw/ccw speed,1.0
-,Exercise dfcd load/unload,12.0
-,Verify load unload dfcd with disk,5.0
-,Redo insert leveling,25.0
-,Adjust dfcd insert leveling,20.0
-,Reduce dfcd cover up and dfcd cap up air,1.0
-,Check engineering mode,6.0
-,,
-spindle fault,Install Dspm & Hutch board,1.0
-,Run resman vxi,1.0
-,Slow down Dfcd Cover up,1.0
-,Change insert,1.0
-,Change black block,1.0
-,Redo Centering,1.0
-,Redo Insert leveling,1.0
-,Optimise head,2.0
-,Run repeat,3.0
-,Reset Dover,11.0
-,Initialise,10.0
-,Erase Dover program,1.0
-,Reprogram Dover,1.0
-,Change pic18,1.0
-,Unplug and plug in back all cables,3.0
-,Reset Pwin32,5.0
-,Reinitialize tester,37.0
-,Restart vxi & dover,1.0
-,Check All dover connection,4.0
-,Slightl pull out dover,1.0
-,Remove chiller holder,1.0
-,Change Dover Power cable,1.0
-,,
-Dover error,Reset Dover,12.0
-,Initialise,10.0
-,Reset VXI,3.0
-,Reset Pic 18,3.0
-,Reconnect All Dover Cable,1.0
-,Check dover fuse,2.0
-,Change Dover fuse,2.0
-,Replace Dover Fan,2.0
-,Reconnect dover cable,1.0
-,Adjust Left Preamp Air,3.0
-,Adjust Door open air,0.0
-,Adjust end effector air reading,23.0
-,Run repeat,0.0
-,Swap Dover,1.0
-,Reprogram Dover,0.0
-,Install PC,23.0
-,Change power supply cable,1221.0
-,,
-bruh,okay,6.0
-,HELLLOOOOOO,11.0
-,HELLLOOOOOO,1.0
-,HELLLOOOOOO,1.0
-,HELLLOOOOOO,1.0
-,HELLLOOOOOO,1.0
-,HELLLOOOOOO,1.0
+Issue,Action Taken,Frequency,Order
+,,,
+Load Head Issue,Reset PIC18,14.0,
+,Reset VXI,11.0,
+,Adjust End Effector reading,9.0,
+,Try a few times load/unload head (ok),8.0,
+,Reset Dover,4.0,
+,Reslot All Module,2.0,
+,Change Head,2.0,
+,Adjust end effector vacuum setting,2.0,
+,Realign preamp,1.0,
+,Realign tester,1.0,
+,Change door sensor,1.0,
+,Reroute Door sensor,1.0,
+,Reoptimize MD chc file,1.0,
+,Restart SETS,1.0,
+,Restart WinEE,1.0,
+,,,
+Isolator error,Reinitialize tester,6.0,
+,Reset VXI,4.0,
+,Adjust Isolator Air,4.0,
+,Check/Adjust Isolator Sensor,3.0,
+,Change Isolator Tubing,3.0,
+,Change Isolator,2.0,
+,Reslot All Module,2.0,
+,Reset Piezo,1.0,
+,Reset Dover,1.0,
+,Redo Touch off,1.0,
+,Restart Tester,1.0,
+,Swap Mictor Cable,1.0,
+,Check/Adjust End Effector reading,1.0,
+,Run Lfach Amp Back,1.0,
+,Optimize CHC file,1.0,
+,,,
+Disc drop issue,Adjust/Redo DFCD Insert Leveling,17.0,
+,Release tester to [Name],12.0,
+,Verify/Check DFCD Leveling,5.0,
+,"Adjust DFCD Air (Cover Up/Lift, CW/CCW Rotate)",5.0,
+,Run Repeat/Debugger Mode (TPI check),4.0,
+,Check Engineering Mode (ID/OD),2.0,
+,Assist on collecting Vibration data,1.0,
+,Change new mouse,1.0,
+,Wipe down tester,1.0,
+,,,
+Resistance issue,Reset VXI,6.0,
+,Realign/Adjust Preamp Alignment,6.0,
+,Initialise,5.0,
+,Check/Verify Resistance,5.0,
+,Change Head,4.0,
+,Release tester to Siti,3.0,
+,Change Preamp,3.0,
+,Reslot Module,3.0,
+,Replace/Change AC Box/Fuse,2.0,
+,Adjust End Effector,2.0,
+,Redo Touch Off,2.0,
+,,,
+Disk scratch,Redo Insert Leveling,4.0,
+,Initialise,3.0,
+,Release tester to Akila,2.0,
+,Release tester to Eric,1.0,
+,Release tester to Anthony,1.0,
+,Wipe down Tester,1.0,
+,Adjust Insert Leveling,2.0,
+,Change Insert,2.0,
+,Check/Engineering Mode,3.0,
+,Manual Turn Spindle Adapter,1.0,
+,Change Head & Disk,1.0,
+,Optimise,1.0,
+,Run Repeat,2.0,
+,Swap PC/Hard Disk,1.0,
+,,,
+dfcd error,Reset PIC 18,9.0,
+,Initialise,13.0,
+,Reset VXI,5.0,
+,Reset Dover,7.0,
+,Release tester to Siti,4.0,
+,Release tester to Anthony,4.0,
+,Release tester to SC,3.0,
+,Load/Unload DFCD,11.0,
+,Check Engineering Mode,6.0,
+,Redo DFCD Insert Leveling,5.0,
+,Adjust DFCD,7.0,
+,Change DFCD Insert,4.0,
+,Try Run/Repeat,5.0,
+,,,
+Low TPI,Redo Insert Leveling,31.0,
+,Reset Vxi,17.0,
+,Change Head & Disk,14.0,
+,Reset Dover,5.0,
+,Reset PIC 18,5.0,
+,Adjust Preamp Alignment,6.0,
+,Release tester to Eric,8.0,
+,Release tester to Siti,9.0,
+,Check Engineering Mode,4.0,
+,Run Repeatability,8.0,
+,Change Insert,7.0,
+,Optimise Head,5.0,
+,Reslot All Module,8.0,
+,,,
+CSM Issue,Reset Vxi,23.0,
+,Change Head & Disk,17.0,
+,Reslot All Module,11.0,
+,Reset Sunburst Power Supply,4.0,
+,Reset Piezo Controller,4.0,
+,Reset Dover,3.0,
+,Reset PC,4.0,
+,Change CSM Module,8.0,
+,Reflash CSM Module,5.0,
+,Adjust Insert Leveling,7.0,
+,Adjust Preamp Alignment,4.0,
+,,,
+Ber unstable,Reset Vxi,27.0,
+,Change Head & Disk,24.0,
+,Reslot All Module,16.0,
+,Change CHC file,17.0,
+,Optimise head,15.0,
+,Run Repeat/Delta,13.0,
+,Change Ber 6 module,8.0,
+,Reset Dover,5.0,
+,Reset PC,4.0,
+,Change CSM Module,6.0,
+,Reflash CSM Module,2.0,
+,Adjust Insert Leveling,6.0,
+,Adjust Preamp Alignment,3.0,
+,Release tester to Eric,9.0,
+,Release tester to Siti,6.0,
+,Release tester to Akila,6.0,
+,,,
+Touch off alignment out,Change backup wingpar,1.0,
+,Verify slot 1 to 8 head resistance and preamp alignment,3.0,
+,Did engineering mode check for ID / OD,3.0,
+,Mailed out data,2.0,
+,Release tester to Siti,1.0,
+,,,
+Copley Move Abort,Check air (leakage),1.0,
+,Change main air joint Connector,1.0,
+,Cut Main air tubing,1.0,
+,Initialise,2.0,
+,Change analog power supply,1.0,
+,Change copley fuse,1.0,
+,Reinitialize tester,1.0,
+,Release tester to Akila,1.0,
+,,,
+servo error,Change CSM module,1.0,
+,Reflash CSM,1.0,
+,Reset Vxi,1.0,
+,Reset Piezo controller,1.0,
+,Initialise,1.0,
+,Check engineering mode,1.0,
+,Change new head & disk,4.0,
+,Change Stdev & Pes range spec,1.0,
+,Restart VXI,1.0,
+,Change backup winspin,1.0,
+,Change XD rw offset,1.0,
+,,,
+Failed to initialize tester,Reset Vxi,3.0,
+,Reset Sunburst power supply,1.0,
+,Reslot All Module,3.0,
+,Reset PC,1.0,
+,Reinstall nivxi software,1.0,
+,Reinitialize tester,2.0,
+,Reinstall vxi resman,1.0,
+,Run XD repeat,1.0,
+,,,
+Power trip,Power on & Initialize tester,3.0,
+,Reconnect E stop connector,1.0,
+,Reinitialize SET,1.0,
+,Reprogram Dover,1.0,
+,,,
+Heater res unstable,Reset Vxi,3.0,
+,Reslot All module,2.0,
+,Adjust Preamp alignment,2.0,
+,Check Engineering Mode,2.0,
+,Reconnect Lfach cable,1.0,
+,Change csm track spacing,1.0,
+,Adjust tilt Up/Down Air,1.0,
+,Run delta,1.0,
+,Reset piezo Controller & analog,1.0,
+,Change Lfach,1.0,
+,Change Dspm,1.0,
+,Reslot dsmp & ber module,1.0,
+,Redo dfcd insert leveling,1.0,
+,Change heater spec,1.0,
+,,,
+Degrade Issue,Check z height,1.0,
+,Change z height ring,2.0,
+,Change power supply cable,1.0,
+,Change SMA cable for Lfatch cable,1.0,
+,Engr mode check,1.0,
+,Run ID repeat,1.0,
+,,,
+Data unstable,Remove load limiter,1.0,
+,Put back original power cable,1.0,
+,Put back original adapter ring,1.0,
+,Increase dfcd cover up air,1.0,
+,Change chc file,1.0,
+,Run repeatability test,2.0,
+,Realign preamp,2.0,
+,Retighten all cables,1.0,
+,Copy setup from RFS128,1.0,
+,Redo repeatability,1.0,
+,Engineering mode check,1.0,
+,Original Dover fixed,1.0,
+,,,
+End effector error,Adjust End effector reading,2.0,
+,Change head & disk,1.0,
+,Change CHC file,1.0,
+,Optimise,1.0,
+,Reset Vxi,3.0,
+,Reset Pic 18,3.0,
+,Initialise,3.0,
+,Check any leakage,1.0,
+,Change Pic18,1.0,
+,Adjust end effector vacuum,2.0,
+,Load/unload head,3.0,
+,Release tester to Siti,2.0,
+,Release tester to Jyothi,1.0,
+,"Homing, pnest and tnest touch off",1.0,
+,Adjusted end effector air,1.0,
+,Verified head resistance and preamp alignment,1.0,
+,,,
+Track scan issue,Reset Vxi,1.0,
+,Reset Piezo controller,1.0,
+,Reslot All module,2.0,
+,Initialise,5.0,
+,Check Engineering mode,6.0,
+,Adjust isolator sensor plate,1.0,
+,Change power cable,1.0,
+,Check trackscan error,1.0,
+,Load head to disk,1.0,
+,Check isolator jerking,1.0,
+,Try Par 6 Module,1.0,
+,Try Piezo Controller,1.0,
+,Change head,4.0,
+,Swap Mictor Cable,1.0,
+,Change new head & disc,2.0,
+,Change warm disc and head,1.0,
+,Reslot module,1.0,
+,Verified dfcd leveling,1.0,
+,Change rw offset,1.0,
+,Change CSM module,1.0,
+,,,
+Disc crash,Change disc adapter,1.0,
+,Run out,1.0,
+,PG06 insert leveling,1.0,
+,Increase dfcd cover up air,1.0,
+,Set p2 cover vacuum,1.0,
+,Engineering mode check for ID/OD,2.0,
+,Vacuum and wipe down tester,1.0,
+,Replace new leveling block,1.0,
+,Redo leveling using leveling tools,1.0,
+,Set dfcd cover vacuum p2 value,1.0,
+,Took RFS121 old pc prepared by Erwin,1.0,
+,Install vxi card,1.0,
+,Unable to initialize Winee,1.0,
+,,,
+ADC Unstable,Reset Vxi,2.0,
+,Reset EE,1.0,
+,Change CHC file,6.0,
+,Reoptimize CHC file,4.0,
+,Run repeat,4.0,
+,Adjust Insert leveling,1.0,
+,Initialise,1.0,
+,Run delta,1.0,
+,Run sample,1.0,
+,Try FMM 3.1 & Chc board,1.0,
+,Change head,4.0,
+,Verify final ADC,2.0,
+,Reslot All module,1.0,
+,Optimise head,1.0,
+,,,
+Amp low,Reset Vxi,13.0,
+,Change head,12.0,
+,Initialize,11.0,
+,Reslot All Module,8.0,
+,Run repeat,7.0,
+,Change disk,5.0,
+,Reset EE,4.0,
+,Optimise head,4.0,
+,Reset Piezo controller,3.0,
+,Change Hutch board,3.0,
+,Change Preamp,3.0,
+,Check Engineering mode,3.0,
+,Reset Analog,2.0,
+,Change Coaxial Cable,2.0,
+,Change Dspm2,2.0,
+,Change Sunburst,2.0,
+,Check Debugger mode,2.0,
+,Run Lfach script,2.0,
+,Redo Insert leveling,2.0,
+,Redo homing & touch off,2.0,
+,Reset Dover,1.0,
+,Change CHC file,1.0,
+,Change CHC board Adaptor,1.0,
+,Change Power supply fuse,1.0,
+,,,
+chiller error,Reset Chiller,4.0,
+,Reinitialize tester,4.0,
+,Reslot All Module,1.0,
+,Reset Analog,1.0,
+,Reset VXI,1.0,
+,Top up Coolant,1.0,
+,Reduce coolant,1.0,
+,Change Chiller,1.0,
+,PC issue solve by IT,1.0,
+,"Done for all VTS, Launch and RFS testers",1.0,
+,,,
+Secondary 59 error,Initialise,8.0,
+,Check engineering mode,8.0,
+,Reset Vxi,4.0,
+,Run VTS repeat Script,4.0,
+,Reset Piezo Controller,3.0,
+,Reflash CSM,2.0,
+,Change CHC file,1.0,
+,Change OD head,1.0,
+,Warmup & ref disk,1.0,
+,Reslot CSM module,1.0,
+,Reslot All Module,1.0,
+,Check Isolator movement,1.0,
+,Change Peizo controller cable,1.0,
+,Verify new element,1.0,
+,Change x28 element,1.0,
+,Redo alignment,1.0,
+,Run XD repeatability,1.0,
+,Verify dfcd leveling gap,1.0,
+,Increase stage air,1.0,
+,Release tester to LS,1.0,
+,Release tester to Siti,1.0,
+,Request Sudha to run repeat,1.0,
+,Pending Engineer to check setup,1.0,
+,,,
+Lfach bad,Reslot all Module,4.0,
+,Initialize Tester,4.0,
+,Change head & disk,5.0,
+,Change setup ring,1.0,
+,Realign preamp,2.0,
+,Reduce speed receiver,1.0,
+,Run ID repeatability,1.0,
+,Try different Lfach board,1.0,
+,Try different DSPM2,1.0,
+,Change preamp,1.0,
+,Redo dfcd insert leveling,2.0,
+,"Reset VXi, Piezo Controller & hutch board power",1.0,
+,Reslot dsmp & ber module,1.0,
+,Uninstall & install VXI resman driver,1.0,
+,Check preamp & fos support alignment,1.0,
+,Try different new head tray,1.0,
+,Replace setup,1.0,
+,Remove unuse scripts & winEE,1.0,
+,Reflash PZ element,1.0,
+,Change dspm2 & reprogram,1.0,
+,,,
+Shroud door issue,Reset PIC18,4.0,
+,Initialize tester,2.0,
+,Reinitialize tester,1.0,
+,Redo touch off,1.0,
+,Change PIC18,1.0,
+,Realign shroud door,2.0,
+,Realign preamp,1.0,
+,Test nest touchoff,1.0,
+,,,as
+Disk slanted,Verify insert leveling,2.0,8
+,Reduce dfcd cover cw/ccw speed,1.0,1
+,Exercise dfcd load/unload,3.0,6
+,Verify load unload dfcd with disk,1.0,7
+,Redo insert leveling,2.0,2
+,Adjust dfcd insert leveling,1.0,5
+,Reduce dfcd cover up and dfcd cap up air,1.0,4
+,Check engineering mode,1.0,3
+,,,
+spindle fault,Install Dspm & Hutch board,1.0,
+,Run resman vxi,1.0,
+,Slow down Dfcd Cover up,1.0,
+,Change insert,1.0,
+,Change black block,1.0,
+,Redo Centering,1.0,
+,Redo Insert leveling,1.0,
+,Optimise head,2.0,
+,Run repeat,3.0,
+,Reset Dover,11.0,
+,Initialise,10.0,
+,Erase Dover program,1.0,
+,Reprogram Dover,1.0,
+,Change pic18,1.0,
+,Unplug and plug in back all cables,3.0,
+,Reset Pwin32,5.0,
+,Reinitialize tester,8.0,
+,Restart vxi & dover,1.0,
+,Check All dover connection,2.0,
+,Slightl pull out dover,1.0,
+,Remove chiller holder,1.0,
+,Change Dover Power cable,1.0,
+,,,
+Dover error,Reset Dover,12.0,
+,Initialise,10.0,
+,Reset VXI,3.0,
+,Reset Pic 18,3.0,
+,Reconnect All Dover Cable,1.0,
+,Check dover fuse,2.0,
+,Change Dover fuse,2.0,
+,Replace Dover Fan,2.0,
+,Reconnect dover cable,1.0,
+,Adjust Left Preamp Air,1.0,
+,Adjust Door open air,1.0,
+,Adjust end effector air reading,1.0,
+,Run repeat,2.0,
+,Swap Dover,1.0,
+,Reprogram Dover,0.0,
+,Install PC,1.0,
+,Change power supply cable,1.0,
+,Put back original Dover,1.0,
